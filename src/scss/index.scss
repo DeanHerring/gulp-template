@@ -1,15 +1,21 @@
-@import 'reset.scss';
+@use 'other/reset';
+@use 'other/fonts';
+@use 'other/variables';
+@use 'other/default';
 
-.death-container {
-  width: 100%;
-  height: 100vh;
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .base {
-    text-align: center;
-    font-size: 10vw;
-    font-weight: bold;
-  }
-}
+// Sections
+@use 'sections/hero';
+@use 'sections/subhero';
+@use 'sections/services';
+@use 'sections/reviews';
+@use 'sections/counters';
+@use 'sections/pricing';
+@use 'sections/footer';
+@use 'sections/terms';
+
+// Components
+@use 'components/promo';
+
+// Utils
+@use 'utils/section-title';
+@use 'utils/section';
