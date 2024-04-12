@@ -64,6 +64,7 @@ const clean = () => {
 const autoreload = () => {
   browserSync.init({
     open: false,
+    notify: false,
     server: {
       baseDir: './dist',
     },
